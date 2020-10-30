@@ -1,5 +1,5 @@
-Feature: Codebraker
+Feature: Ahorcado
 
-Scenario: Inicio
+Scenario: Bienvenido al Juego
 When inicio la aplicacion
-Then muestra "Bienvenido a Codebraker"
+Then muestra "Bienvenido al juego Ahorcado"

@@ -2,5 +2,5 @@ require 'sinatra'
 require './config'
 
 get '/' do
-    erb :index
+    "<h1>Bienvenido al juego Ahorcado</h1>"
 end
