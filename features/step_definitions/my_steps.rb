@@ -9,3 +9,17 @@ end
 Then("imprime {string}") do |mensaje|
     expect(page).to have_css "p", text: mensaje
 end
+
+Given("inicio la aplicacion con la letra {string}") do |string|
+    visit '/'
+end
+
+When("envia letra {string}") do |string|
+   fill_in "letra", :with => string
+   click_button "Enviar"
+end
+
+Then("mostrar {string}") do |mensaje|
+    expect(page).to have_css "div#mensaje", text: mensaje
+end
+

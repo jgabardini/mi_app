@@ -7,6 +7,12 @@
    </head>
    <body>
        <h1>Bienvenido al juego Ahorcado</h1>
-       <p>_</p>
+       <p><%=@palabra%></p>
+       <form action="/" method="post">
+          <input type="text" name="letra" id="letra"/>
+          <input type="submit" value="Enviar"/>
+       </form>
+        <div id="mensaje"><%=@mensaje%></div> 
     </body>
 </html>
+
